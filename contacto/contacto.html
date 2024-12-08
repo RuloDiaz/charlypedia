@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página web">
+    <meta name="keywords" content="palabras, clave, separadas, por, comas">
+    <meta name="author" content="Autor de la página web">
+    <title>Charlypedia</title>
+
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Fuente externa de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="fondo">
+    <!-- Cabecera de la página -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.png" alt="SayNoMore" width="40" height="40">
+              </a>              
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Charlypedia</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../biografia/biografia.html">Biografía</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../bandas/bandas.html">Bandas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../discografia/discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../trivia/trivia.html">Trivia</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Sección principal del contenido -->
+    <main>
+      <section class="card text-bg-dark">
+        <div class="card-body">
+        <h4>¡Gracias por visitar Charlypedia! Si quieres contribuir al desarrollo del sitio o si tienes algún comentario, ¡hazmelo saber! Tu feedback es muy importante para nosotros.</h4>
+        <form class="row g-3 mt-3" action="https://formsubmit.co/diazmaximo2a@gmail.com" method="POST" name="formulario" id="formulario" onsubmit="return validarFormulario()">
+            <div class="col-6">
+                <label for ="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo">
+            </div>
+            <div class="col-6">
+                <label for ="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="col-12">
+                <label for ="mensaje" class="form-label">Mensaje</label>
+                <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit"  class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+      </div>
+    </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="card text-center text-bg-dark">
+      <div class="card-body">
+          <h3 class="card-title">Charlypedia</h3>
+          <p class="card-text">Descubre la genialidad y la historia detrás del mito.</p>
+          <p>Hecha por  <a href="../desarrollador/diaz.html" target="_blank">Diaz Maximo</a></p>
+      </div>
+</footer>
+</div>
+</body>
+
+</html>

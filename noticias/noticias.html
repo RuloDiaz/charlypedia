@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página web">
+    <meta name="keywords" content="palabras, clave, separadas, por, comas">
+    <meta name="author" content="Autor de la página web">
+    <title>Noticias</title>
+
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Fuente externa de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="fondo">
+    <!-- Cabecera de la página -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.png" alt="SayNoMore" width="40" height="40">
+              </a>              
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Charlypedia</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../biografia/biografia.html">Biografía</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../bandas/bandas.html">Bandas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../discografia/discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../trivia/trivia.html">Trivia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../galeria/galeria.html">Galería</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Sección principal del contenido -->
+    <main>
+      <div class="container tetx-center">
+      
+        <!-- Noticia 1 -->
+        <section>
+          <div class="card text-bg-dark">
+            <div class="card-body row">
+              <h3>Yo soy el escorpión</h3>
+              <div class="col-md-3"><img src="assets/Tapa.jpg" class="card-img-top" alt="Charly García en el Faena"></div>
+              <p class="col-md-8">Charly García, a sus 72 años, lanza La lógica del escorpión, un álbum inspirado en la fábula del escorpión y la rana, que descubrió viendo la película Mr. Arkadin de Orson Welles durante la pandemia. Este disco, fiel al estilo impredecible del artista, mezcla autorreferencias, temas inéditos de su adolescencia, y colaboraciones que evocan nostalgia, como la última grabación de su voz junto a Spinetta.<br>
+              El álbum carece de una lógica tradicional, reflejando el carácter instintivo de García. Su creación estuvo marcada por años de trabajo en el estudio y las complicaciones de salud del músico, quien lleva una vida más aislada en su departamento de Coronel Díaz, similar al "Xanadu" de Charles Foster Kane en El ciudadano.<br>
+              Aunque reacio a entrevistas, Charly envió respuestas breves y enigmáticas a la revista Rolling Stone, quienes reconstruyeron la gestación del disco a través de testimonios de colaboradores como Renata Schussheim. La lógica del escorpión se presenta como el último enigma de un artista que sigue rompiendo esquemas y explorando su propia esencia.</p>
+              <p> 29 de agosto de 2024 </p>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Noticia 2 -->
+        <section>
+          <div class="card text-bg-dark">
+            <div class="card-body row">
+              <h3>El regreso de Charly, su primera presentación en público después de dos años.</h3>
+              <div class="col-md-3"><img src="assets/faena.jpg" class="card-img-top" alt="Charly García en el Faena"></div>
+              <p class="col-md-8">Charly García hizo su esperado regreso a los escenarios después de dos años. El evento se llevó a cabo en el Faena Hotel de Buenos Aires, donde García interpretó dos de sus clásicos, “Yendo de la cama al living” y “Cerca de la revolución”, acompañado por la Baremberg & Mojo Jam Band. El regreso se gestó cuando Gastón Baremberg, conocido por su trabajo con Fito Páez, propuso un proyecto lúdico para traer la música de García al Faena. A pesar de la sorpresa y la falta de preparación previa, el público se emocionó al ver a García tocar, y el músico mostró su felicidad durante la actuación. La experiencia fue conmovedora para Baremberg, quien destacó que lo más importante fue ver a García feliz y conectado con la música. </p>
+              <p> 8 de junio de 2024 </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Noticia 3 -->
+        <section>
+          <div class="card text-bg-dark">
+            <div class="card-body row">
+              <h3>La Lógica del Escorpión, todo lo que sabemos del próximo disco de Charly. </h3>
+              <div class="col-md-4"><img src="assets/logica.jpg" class="card-img-top" alt="Charly García junto a las autoridades de Sony Music"></div>
+              <p class="col-md-8">Se confirmó que Charly García lanzará su esperado álbum, *La lógica del escorpión*, en los próximos meses, marcando su regreso tras siete años desde *Random* (2017). Sony Music ha sellado el acuerdo para el lanzamiento del decimocuarto álbum de estudio de García, que estará disponible en vinilo y plataformas digitales.<br>
+              La producción del álbum se vio interrumpida por la pandemia y problemas de salud del músico, lo que añade un valor especial a este trabajo. La cantante Rosario Ortega y el productor José Palazzo compartieron detalles sobre la finalización del disco, que cuenta con colaboraciones de destacados músicos como Fabián Quintiero, Fernando Samalea, y los chilenos Kiuge Hayashida y Toño Silva. Además, se espera que incluya versiones de clásicos del rock en inglés traducidos al castellano y reversiones de viejos temas inéditos.<br>
+              El álbum, que incorpora una variedad de instrumentos y tecnología moderna, tiene una portada diseñada por Renata Schussheim, evocando recuerdos del pasado. Aunque el lanzamiento se ha hecho esperar, *La lógica del escorpión* promete ser un evento significativo en la carrera de García.</p>
+              <p>29 de abril de 2024</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Noticia 4 -->
+        <section>
+          <div class="card text-bg-dark">
+            <div class="card-body row">
+              <h3>La Lógica del Escorpión, el nuevo álbum de Charly García, está finalmente terminado</h3>
+              <div class="col-md-4"><img src="assets/escorpion.png" class="card-img-top" alt="Charly García junto con José Palazzo y varios de los músicos que colaboraron en el disco"></div>
+              <p class="col-md-8">Se anunció que *La lógica del escorpión*, el nuevo álbum de Charly García, está finalmente terminado, marcando su regreso tras cinco años de trabajo desde *Random* (2017). José Palazzo, productor y manager de García, compartió la noticia en redes sociales y destacó la importancia del álbum, describiéndolo como un "discazo" y pidiendo a las disqueras que aceleren su lanzamiento.<br>
+              El proceso creativo del álbum fue extenso, con García incorporando elementos progresivamente. La producción incluyó colaboraciones de renombrados músicos como Rosario Ortega, Fabián Quintiero, Fernando Samalea, y músicos chilenos Kiuge Hayashida y Toño Silva. El disco contará con versiones de clásicos del rock en inglés y temas inéditos.<br>
+              La portada del álbum, diseñada por Renata Schussheim, recuerda el arte del primer concierto solista de García en 1982. El álbum refleja la adaptación y evolución continua de García como artista, con la integración de tecnología moderna en su música. *La lógica del escorpión* es altamente esperado y promete ser un importante capítulo en la carrera de García, que sigue siendo una figura influyente en la música de Argentina y Latinoamérica.</p>
+              <p>15 de diciembre de 2023</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Noticia 5 -->
+        <section>
+          <div class="card text-bg-dark">
+            <div class="card-body row">
+              <h3>Charly García volvió al estudio de grabación</h3>
+              <div class="col-md-4"><img src="assets/estudio.jpg" class="card-img-top" alt="Charly García con Rosario Ortega"></div>
+              <p class="col-md-8">Rosario Ortega publicó en Instagram una foto de ella y Charly García en un estudio de grabación, que rápidamente se viralizó. La imagen, tomada en los estudios Happy Together de Buenos Aires, muestra a García con un micrófono y a Ortega cantando.<br>
+              En una entrevista con Rolling Stone, Ortega confirmó que grabaron "unas voces" para el álbum La lógica del escorpión, el nuevo disco de García, pero no se proporcionaron detalles sobre la fecha de lanzamiento. El álbum, que comenzó a gestarse durante la pandemia, incluirá reversiones de viejos temas de García, inéditos de la época en la que vivió en la quinta de la familia Ortega en Luján, y versiones de clásicos del rock en inglés traducidos al castellano. Además de Ortega, participaron en el álbum Fabián Quintiero, Fernando Samalea, Fernando Kabusacki, y los músicos chilenos Kiuge Hayashida y Toño Silva. Aunque aún no hay una fecha confirmada para el lanzamiento, parece que García está ultimando los detalles de su esperado disco.</p>
+              <p>4 de diciembre de 2023</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Noticia 6 -->
+        <section>
+          <div class="card text-bg-dark">
+            <div class="card-body row">
+              <h3>"Charly García Corner" en Nueva York</h3>
+              <div class="col-md-4"><img src="assets/esquina.jpg" class="card-img-top" alt="Esquina Charly García"></div>
+              <p class="col-md-8">Se celebró el homenaje "Charly García Corner" en Nueva York, en la esquina de Walker St. y Cortland Alley. Este evento fue una iniciativa de Mariano Cabrera, y contó con la participación de numerosos músicos y celebridades.<br>
+              La fiesta comenzó con la instalación de una placa conmemorativa en honor al 40º aniversario del álbum Clics Modernos. La celebración incluyó actuaciones de Hilda Lizarazu, Fabián Quintiero, Toño Silva, y Kiuge Hayashida, entre otros. Se tocaron temas emblemáticos de García como "No soy un extraño", "Ojos de video tape", "Los dinosaurios", y "Buscando un símbolo de paz", y la ceremonia culminó con un emocionante final con "De mí".<br>
+              El evento también incluyó una fiesta en el Consulado Argentino, con actuaciones y exposiciones relacionadas con García. Aunque Charly García no pudo asistir personalmente, su presencia se sintió en el homenaje, y el reconocimiento de su influencia y legado en Nueva York fue evidente.</p>
+              <p>6 de noviembre de 2023</p>
+            </div>
+          </div>
+        </section>
+    </div>
+    </main>
+
+      <!-- Pie de página -->
+    <footer class="card text-center text-bg-dark border-0">
+      <div class="card-body">
+          <h3 class="card-title">Charlypedia</h3>
+          <p class="card-text">Descubre la genialidad y la historia detrás del mito.</p>
+          <p>Hecha por  <a href="../desarrollador/diaz.html" target="_blank">Diaz Maximo</a></p>
+      </div>
+    </footer>  
+    </div>
+</body>
+
+</html>
